@@ -7,9 +7,12 @@
 </head>
 <body>
     <h1>Aula 03</h1>
+    <hr>
+    <h2>Link</h2>
     <nav>
         <a href="https://google.com" target="_blank">Link Google</a>
     </nav>
+    <h2>Textos</h2>
     <div>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, numquam quaerat recusandae dolor at cumque ullam. 
         Blanditiis magnam earum assumenda voluptas eligendi, dignissimos quae obcaecati quam nihil, dolorum, accusamus iusto?</p>
@@ -31,6 +34,8 @@
         <input type="text">
         <input type="text">
     </div>
+    <hr>
+    <h2>Listas</h2>
     <ul>
         <li>Lista não ordenada</li>
         <li>Lista não ordenada</li>
@@ -52,15 +57,19 @@
         <dd>vida</dd>
     </dl>
 <hr>
-
+<h2>Tabelas</h2>
 <table>
+    <caption>Churrasco 2026</caption>
+    <thead>
     <tr>
-        <td>Índice</td>
-        <td>Nome</td>
-        <td>Quantidade</td>
-        <td>Valor item</td>
-        <td>Valor total</td>
+        <th>Índice</th>
+        <th>Nome</th>
+        <th>Quantidade</th>
+        <th>Valor item</th>
+        <th>Valor total</th>
     </tr>
+    </thead>
+    <tbody>
     <tr>
         <td>1</td>
         <td>Carne</td>
@@ -68,6 +77,7 @@
         <td>40,00</td>
         <td>160,00</td>
     </tr>
+    </tbody>
     <tr>
         <td>2</td>
         <td>Pão de Alho</td>
@@ -75,6 +85,42 @@
         <td>15,00</td>
         <td>45,00</td>
     </tr>
+    <tr>
+        <td>3</td>
+        <td>Rollmops</td>
+        <td>10 vidros</td>
+        <td>15,00</td>
+        <td>150,00</td>
+    </tr>
+    <tfoot>
+    <tr>
+        <td colspan="4">Total</td>
+        <td>355,00</td>
+    </tr>
+    </tfoot>
 </table>
+<hr>
+<h2>Formulários</h2>
+
+<p>Click on one of the text labels to toggle the related radio button:</p>
+
+<form action="/action_page.php">
+  <input type="radio" id="html" name="fav_language" value="HTML">
+  <label for="html">HTML</label><br>
+  <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="css">CSS</label><br>
+  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <label for="javascript">JavaScript</label><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<form action="https://google.com/search">
+    <label for="busca">Termos de busca</label>
+    <input id="busca" name="q" type="text" placeholder="digite aqui" value="carne">
+    <input type="text" value="Carne">
+    <input type="color">
+    <input type="submit" value="Pesquisar">
+</form>
+
 </body>
 </html>
