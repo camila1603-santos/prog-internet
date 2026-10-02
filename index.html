@@ -121,6 +121,34 @@
     <input type="color">
     <input type="submit" value="Pesquisar">
 </form>
+<hr>
+
+<canvas id="canvas" height="1000px" width="600px">
+    <script>
+        
+        desenhando = false;
+        const ctx= canvas.getContext("2d");
+        ctx.lineWidth=5;
+
+        canvas.addEventListener("mousedown",(e)=>{
+            desenhando=true;
+            ctx.moveTo(e.offsetX, e.offsetY);
+        });
+
+        canvas.addEventListener("mouseup", (e)=>{
+            desenhando=false;
+        }); 
+
+        canvas.addEventListener("mousemove", (e)=>{
+            if (desenhando){
+            ctx.lineTo(e.offsetX, e.offsetY);
+            ctx.stroke();
+        }
+    });
+        
+    </script>
+
+</canvas>
 
 </body>
 </html>
