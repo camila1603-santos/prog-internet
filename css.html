@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS</title>
+        <style>
+        /*Regra CSS*/
+
+        *{
+           /*border: 1px solid #000000;*/
+            background-color: rgb(252, 249, 245);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        p{
+            font-size: 24px;
+            color: rgb(255, 120, 120); /*Cada pixel usa 24 bit - um byte cada um*/
+            background-color: #6d6464;
+            border: 3px dotted white;
+        }
+
+        .linha{
+            background-color: aquamarine;
+        }
+
+        li:hover{
+            color: blueviolet;
+        }
+
+        h2{
+            color: blueviolet;
+        }   
+
+
+    </style>
+    </head>
+    <body>
+        <h1 style="background-color: rgb(255, 120, 120);">CSS</h1>
+        <p>Css é uma linguagem declarativa auxiliar a documentos HTML para
+            estilização de definição de comportamento. O css pode ser declarado de três formas distintas:
+        </p>
+        <ul>
+            <li class="linha">Na tag style, definida no cabeçalho do HTML</li>
+            <li>Em um documento externo por meio da tag link</li>
+            <li class="linha">Inline no próprio elemento HTML</li>
+        </ul>
+        
+        <h2>Regra CSS</h2>
+        <p>propriedade: Valor;</p>
+        <p>a última regra que tenha uma mesma especificidade é a que prevalece</p>
+        
+        <div>
+            <p>CSS possui diversas formas de selecionar em quais elementos uma regra será aplicada.</p>
+            <h2>Seletores:</h2>
+            <ul>
+                <li class="linha">seletor por elemento</li>
+                <li>* seletor universal</li>
+                <li class="linha"># identificador único</li>
+                <li>.classe seletor por classe</li>
+                <li class="linha">.classe seletor por classe</li>
+                <li>seletor por descendente. Todo x que é descendente/filho de y. Tem diferença entre filho e descendente.</li>
+            </ul>
+            
+        </div>
+    </body>
+</html>
