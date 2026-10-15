@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        *{
+            border: 1px solid gray;
+        }
+
+        .container{
+            min-height: 50vh;
+           display: flex;  /* posicionar os elementos numa linha flexível */
+           flex-direction: row; /*fluxo do elemento*/
+           flex-wrap: wrap; /*quebra ou não linha*/
+           justify-content: space-between; /*sempre acompanha o eixo - horizontal ou vertical*/
+           /*os filhos do flex herdam a altura do container*/
+           align-items: center; /*distribui ...*/
+           /*align-content: ;*/
+           flex-shrink: 0; /*ninguém cede espaço*/
+        }
+        .links{
+            min-height: 10vh;
+            display: flex;
+        }
+
+        .box{
+            width: 100px;
+        }
+
+        /* #box5{
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">box1</div>
+        <div class="box" id="box2">box2</div>
+        <div class="box" id="box4">box3</div>
+        <div class="box" id="box4">box4</div>
+        <div class="box" id="box5">box5</div>
+    </div>
+
+    <div class="links">
+        <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" class="hrref">Site css</a>
+    </div>
+
+    
+</body>
+</html>
