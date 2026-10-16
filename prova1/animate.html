@@ -14,7 +14,7 @@
 
         #moon{
             position: fixed;
-            animation: moon 10s linear 1s infinite;
+            animation: moon 10s cubic-bezier(.22,.88,.52,.3) 1s infinite;
         }
 
         @keyframes lancamento {
@@ -34,7 +34,7 @@
             }
 
             100%{
-                right: 0vh;
+                right: -10vh;
             }
             
         }
